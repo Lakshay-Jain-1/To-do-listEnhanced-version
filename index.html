@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+  #toDoHeader {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+
+    #up{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #down{
+      position: absolute;
+      right: 0;
+      top: 20px; 
+    }
+
+    </style>
+</head>
+
+<body>
+  
+  <h1 style="display:inline-block; margin-right:400px" >TO DO LIST</h1> 
+  <button id="alarm" type="button"> Alarm </button>
+  <button id="up" type="button">↑</button>
+  <button id="down" type="button">↓</button>
+  
+  <div id="to_do_container" style="width: 100%; height:200px ;">
+    <div id="to_do_list" style="background-color: pink;border-radius: 5%; width: 100%; height:30px ;">
+        <form >
+      <button id="add" style="font-weight: 800; width: 30px;height: 30px;" type="button"> + </button>
+      <button id="subtract" style="font-weight: 800;width: 30px;height: 30px;" type="button"> - </button>
+    <input id ="input" type="text" style="width:200px;">
+          <button value="red"  style="background-color:red;" type="button" class="colorchange">Priority 1</button>
+          <button value="yellow" style="background-color:yellow;" class="colorchange"  type="button">Priority 2</button>
+          <button value="pink" style="background-color:pink;"  type="button" class="colorchange" >Priority 3</button>
+          <input type="time">
+          </form>
+    </div>
+  
+
+    </div>
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>
